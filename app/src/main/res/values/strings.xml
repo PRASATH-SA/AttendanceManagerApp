@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ACET CSE</string>
+    <string name="attendance">Attendance</string>
+    <string name="view">View</string>
+    <string name="search">Search</string>
+    <string name="cse">Department of Computer Science and Engineering!</string>
+<<<<<<< HEAD
+    <string name="todo">TODO</string>
+=======
+>>>>>>> ee2a757 (Android app to manage students attendance)
+    <string name="HomeDesc">Set and Get your attendance records with ease!..</string>
+    <string name="ii_a">II - A</string>
+    <string name="ii_b">II - B</string>
+    <string name="iv_a">IV - A</string>
+    <string name="iv_b">IV - B</string>
+    <string name="iii_b">III - B</string>
+    <string name="iii_a">III - A</string>
+    <string name="loading_students">Loading students...</string>
+    <string name="sub">Submit Attendance</string>
+    <string name="title_search">Search</string>
+</resources>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="12dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Search Input -->
+        <EditText
+            android:id="@+id/editSearch"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Roll No or Name"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:drawablePadding="8dp"
+            android:textSize="16sp" />
+
+        <!-- Search Button -->
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+        <!-- Student Info Card -->
+        <LinearLayout
+            android:id="@+id/studentInfoContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:drawable/dialog_holo_light_frame">
+
+            <TextView
+                android:id="@+id/studentName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: -"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="4dp" />
+
+            <TextView
+                android:id="@+id/studentRoll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Roll No: -"
+                android:textSize="16sp"
+                android:padding="4dp" />
+
+            <TextView
+                android:id="@+id/studentClass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class: -"
+                android:textSize="16sp"
+                android:padding="4dp" />
+        </LinearLayout>
+
+        <!-- Attendance Table -->
+
+
+        <!-- Summary Table -->
+        <TableLayout
+            android:id="@+id/tableLayoutSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0,1"
+            android:layout_marginTop="16dp"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:padding="8dp">
+<!--            android:background="@android:color/white"-->
+
+            <TableRow
+                android:background="@color/white"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Present"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/presentCount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:padding="8dp" />
+            </TableRow>
+
+            <TableRow
+                android:background="@color/white"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Absent"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/absentCount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:padding="8dp" />
+            </TableRow>
+
+            <TableRow
+                android:background="@color/blue"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Total Days"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/totalDays"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:padding="8dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:id="@+id/tableLayoutResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0,1"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/white"
+            android:padding="8dp">
+
+            <!-- Table Header -->
+            <TableRow
+                android:background="@color/purple_200"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Date"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Attendance"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:padding="8dp" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>
