@@ -59,11 +59,7 @@
         android:id="@+id/imageView"
         android:layout_width="199dp"
         android:layout_height="179dp"
-<<<<<<< HEAD
-        android:contentDescription="@string/todo"
-=======
         android:contentDescription="@string/cse"
->>>>>>> ee2a757 (Android app to manage students attendance)
         android:src="@drawable/logo_removebg_preview"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

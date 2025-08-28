@@ -4,10 +4,7 @@
     <string name="view">View</string>
     <string name="search">Search</string>
     <string name="cse">Department of Computer Science and Engineering!</string>
-<<<<<<< HEAD
     <string name="todo">TODO</string>
-=======
->>>>>>> ee2a757 (Android app to manage students attendance)
     <string name="HomeDesc">Set and Get your attendance records with ease!..</string>
     <string name="ii_a">II - A</string>
     <string name="ii_b">II - B</string>
